@@ -9,9 +9,6 @@ CONFIG_TARGET_brcm2708_RaspberryPi=y
 # Kernel
 #
 CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
-CONFIG_PACKAGE_kmod-usb-serial=y
-CONFIG_PACKAGE_kmod-usb-serial-ftdi=y
-CONFIG_PACKAGE_kmod-usb-serial-pl2303=y
 
 #
 # Rootfs
@@ -35,13 +32,17 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_REVERSE_SEARCH=y
 # Luci
 #
 CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-mod-rpc=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
+CONFIG_PACKAGE_luci-theme-avalon=y
+CONFIG_PACKAGE_luci-app-cgminer=y
+CONFIG_PACKAGE_luci-app-avalon=y
 
 #
 # Apps
 #
 CONFIG_PACKAGE_cgminer=y
-CONFIG_CGMINER_AVALON2=y
+CONFIG_CGMINER_AVALON4=y
 
 CONFIG_PACKAGE_libncurses=y
 
@@ -50,10 +51,8 @@ CONFIG_PACKAGE_coreutils=y
 CONFIG_PACKAGE_screen=y
 CONFIG_PACKAGE_sed=y
 
-CONFIG_PACKAGE_pyserial=y
 CONFIG_PACKAGE_python=y
 CONFIG_PACKAGE_python-mini=y
 
-CONFIG_PACKAGE_fpgatools=y
-CONFIG_PACKAGE_xc3sprog=y
-CONFIG_PACKAGE_mini-jtag=y
+CONFIG_PACKAGE_fpgatools=m
+CONFIG_PACKAGE_xc3sprog=m
